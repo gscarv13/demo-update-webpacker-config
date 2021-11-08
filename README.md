@@ -3,8 +3,11 @@
 Steps to generate this app:
 
  - Generate app `rails new --skip-sprockets -J --skip-turbolinks demo-project`
- - Add `gem 'webpacker', '6.0.0.rc.5'
-gem 'react_on_rails', git: 'https://github.com/gscarv13/react_on_rails.git'` to the gem file
+ - Add The following to the Gemfile
+ ```ruby
+ gem 'webpacker', '6.0.0.rc.5'
+ gem 'react_on_rails', git: 'https://github.com/gscarv13/react_on_rails.git'
+ ```
 
 - On the terminal:
 ```bash
