@@ -1,24 +1,18 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Steps to generate this app:
 
-Things you may want to cover:
+ - Generate app `rails new --skip-sprockets -J --skip-turbolinks demo-project`
+ - Add `gem 'webpacker', '6.0.0.rc.5'
+gem 'react_on_rails', git: 'https://github.com/gscarv13/react_on_rails.git'` to the gem file
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+- On the terminal:
+```bash
+ bundle
+ bundle exec rails webpacker:install
+ git add .
+ git commit -m "Initial commit"
+ rails generate react_on_rails:install
+```
+- To run the server `foreman start -f Procfile.dev`
+- visit `http://localhost:3000/hello_world`
